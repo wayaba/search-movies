@@ -8,8 +8,7 @@ const Detail = () => {
     const [movie, setMovie] = useState(null)
 
     useEffect(() => {
-        console.log('use effect')
-        OmdbAPI.searchMovieById(id).then(res => { console.log(res); setMovie(res) })
+        OmdbAPI.searchMovieById(id).then(res => setMovie(res) )
     }, [])
 
     function renderMovie() {
@@ -46,8 +45,6 @@ const Detail = () => {
 
     return (
         <>
-            {console.log('return')}
-            {console.log(movie)}
             <ButtonBackToHome />
             <br/>
             <br/>

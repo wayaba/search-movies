@@ -15,7 +15,6 @@ const SearchForm = (props) => {
 
         OmdbAPI.searchMovies(searchValue)
             .then(results => {
-                console.log(results)
                 const {Search = []} = results
                 onResults(Search)
             })
