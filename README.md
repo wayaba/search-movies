@@ -23,4 +23,7 @@ npm run build
 surge build
 ```
 
+#NOTA 
+Para evitar el error de 404 de Surge hay que copiar el archivo build/index.html con el nombre 200.html
+
 sitio subido en http://blitox-searchmovie.surge.sh/
